@@ -1,12 +1,113 @@
+
 #root {
-  min-width: 1480px;
-  min-height: 700px;
+  width: 100%;
+  min-height: 750px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   background-image: url('images/Background.png');
   background-size: contain;
 }
+
+/* Header */  
+
+header{
+  display: flex;
+  background-color: white;
+  border: 3px lightgray solid;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+}
+nav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+#div-btn-2{
+  margin-left: 5%;
+  color: black;
+  height: 100%;
+}
+#btn-inicio, #btn-sobre, #btn-logout{
+  font-size: 1.3em;
+  color: black;
+  height: 100%;
+  background-color: white;
+  border-radius: 0;
+  width: 120px;
+}
+#btn-logout{
+  margin-left: 67%;
+}
+#btn-inicio:hover, #btn-sobre:hover, #btn-logout:hover{
+  color: rgb(0, 85, 0);
+  border-bottom: 3px rgb(0, 188, 0) solid;
+  transform: translateY(1px);
+}
+#btn-logout:hover{
+    transform: translateY(2px);
+}
+#btn-inicio:active, #btn-sobre:active, #btn-logout:active{
+  transform: translateX(1px);
+}
+#logo{
+  width: 200px;
+  margin-left: 10%;
+  display: flex;
+}
+  
+/* Form de Busca */
+
+form{
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0px 30px 30px;
+  width: 100%;
+}
+input{
+  color: rgb(50, 50, 50);
+  width: 250px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px ;
+}
+
+button {
+    border-radius: 8px;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 600; 
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    color: white; 
+}
+#btn-busca{
+    width: 100px;
+    background-color: #1900ff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px ;
+}
+#btn-busca:hover {
+    background-color: rgb(0, 0, 255);
+}
+#btn-busca:active{  
+      transform: translateX(-2px);
+}
+
+/* Cards das Bandeiras */
 
 #div-card{
   display: flex;
@@ -44,29 +145,12 @@ span{
   justify-content: start;
   width: 100%;
 }
-form{
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 100%;
-  gap: 20px;
-}
-input{
-  color: white;
-  width: 200px;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  text-align: center;
-}
 hr{
   border: 1px dashed lightgray
 }
+
+/* Botões do Card */
+
 #btn-card{
   display: flex;
   justify-content: space-between;
@@ -76,18 +160,29 @@ hr{
   align-items: start;
   margin: 30px 10px 5px 10px;
   width: 120px;
-}
-#edit-btn, #del-btn{
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 #edit-btn{
-  background-color: green;
+  background-color: rgb(255, 182, 46);
+}
+#edit-btn:hover {
+    background-color: rgb(255, 160, 0);
+}
+#edit-btn:active, #del-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 #del-btn{
-  background-color: red;
+  background-color: rgb(255, 52, 52);
 }
+#del-btn:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+/* Icones dos Botões do Card */
+
 #icon-edit-png, #icon-del-png{
   margin-right: 5px;
 }

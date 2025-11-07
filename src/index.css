@@ -12,17 +12,3 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-button {
-    width: 200px;
-    border-radius: 8px;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 600; 
-    font-family: inherit;
-    cursor: pointer;
-    border: none; 
-    background-color: #007bff;
-    color: white; 
-    box-shadow: 3px 2px 3px rgba(181, 187, 255, 0.2);
-    margin-left: 20px;
-}

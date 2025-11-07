@@ -47,13 +47,25 @@ function App() {
 
   return (
     <>
+    <header>
+        <h1>
+          <img src="src\images\logoFlagpedia.png" alt="" id='logo'/>
+        </h1>
+        <nav>
+            <div id='div-btn-2'>
+              <button id='btn-inicio'>Inicio</button>
+              <button id='btn-sobre'>Sobre</button>
+            </div>
+              <button id='btn-logout'>LogOut</button>
+          </nav>
+      </header>
       <form onSubmit={handleSubmit}>
         <input type="text" 
           placeholder='nome do país em inglês'
           value={valorInput}
           onChange={(e) => setValorInput(e.target.value)}  
         />
-        <button type='submit'>Buscar</button>
+        <button type='submit' id='btn-busca'>Buscar</button>
       </form>
       <div id='div-card'>
         {listaPaises.length > 0 ? (
